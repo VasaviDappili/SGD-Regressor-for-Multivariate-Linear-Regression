@@ -13,7 +13,15 @@ To write a program to predict the price of the house and number of occupants in 
 3. Scale the features using StandardScaler and train the SGDRegressor using MultiOutputRegressor.
 4. Evaluate the model using metrics like mean squared error and R-squared score.
 ## Program:
-```import numpy as np
+```
+/*
+Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
+Developed by: DAPPILI VASAVI
+RegisterNumber: 212223040030 
+*/
+```
+```
+import numpy as np
 
 import pandas as pd
 
@@ -37,13 +45,6 @@ dataset=fetch_usa_housing()
 df=pd.DataFrame(dataset.data,columns=dataset.feature_names)
 df["HousingPrice"]=dataset.target
 df.head()
-```
-```
-/*
-Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
-Developed by: DAPPILI VASAVI
-RegisterNumber: 212223040030 
-*/
 ```
 
 ## Output:
